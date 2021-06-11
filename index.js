@@ -39,14 +39,14 @@ function findOrAdd(rootNode, newNode) {
   if (newNode.data < currentNode.data) {
     // check left side
     if (currentNode.left) {
-      return findOrAdd(currentNode, newNode)
+      return findOrAdd(currentNode.left, newNode)
     } else {
       return currentNode.left = newNode
     }
   } else if (newNode.data > currentNode.data) {
     // check right side 
     if (currentNode.right) {
-      return findOrAdd(currentNode, newNode)
+      return findOrAdd(currentNode.right, newNode)
     } else {
       return currentNode.right = newNode
     }
