@@ -55,7 +55,14 @@ function findOrAdd(rootNode, newNode) {
 
 
 
-function max()
+function max(node) {
+  let max = node.data
+  
+  let inOrderNode = []
+  inOrderNode.push(inOrder(node))
+  
+  return inOrderNode[]
+}
 
 
 
