@@ -59,9 +59,9 @@ function max(node) {
   let currentNode = node 
   
   if (currentNode.right) {
-    return currentNode
+    return max(currentNode.right)
   } else {
-    return max(node)
+    return currentNode
   }
 }
 
