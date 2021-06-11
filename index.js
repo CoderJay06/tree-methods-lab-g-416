@@ -56,12 +56,13 @@ function findOrAdd(rootNode, newNode) {
 
 
 function max(node) {
-  let max = node.data
+  let currentNode = node 
   
-  let inOrderNode = []
-  inOrderNode.push(inOrder(node))
-  
-  return inOrderNode[]
+  if (currentNode.right) {
+    return currentNode
+  } else {
+    return max(node)
+  }
 }
 
 
