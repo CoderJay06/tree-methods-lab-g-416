@@ -73,6 +73,10 @@ function max(node) {
 function min(node) {
   let currentNode = node
   
+  // check if left child node (smaller) exists
+  // if so, recursively get next left child
+  // repeat until reached end
+  // then just return min child node
   if (currentNode.left) {
     return min(currentNode.left)
   } else {
