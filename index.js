@@ -58,12 +58,31 @@ function findOrAdd(rootNode, newNode) {
 function max(node) {
   let currentNode = node 
   
+  // check for right node (larger child)
   if (currentNode.right) {
+    // if exists, recursively get next larger child
     return max(currentNode.right)
+  } else {
+    // when reached end, return largest node
+    return currentNode
+  }
+}
+
+
+
+function min(node) {
+  let currentNode = node
+  
+  if (currentNode.left) {
+    return min(currentNode.left)
   } else {
     return currentNode
   }
 }
+
+
+
+
 
 
 
